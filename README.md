@@ -1,6 +1,6 @@
 # Food_Delivery_App
 
-A new Flutter project.
+A new Food Delivery Flutter App.
 
 ## Getting Started
 
