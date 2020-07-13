@@ -25,7 +25,7 @@ class _MainScreenState extends State<MainScreen> {
     orderPage = OrderPage();
     favouritePage = FavouritePage();
     profilePage = ProfilePage();
-    pages = [homePage, orderPage, favouritePage, profilePage];
+    pages = [homePage, favouritePage, orderPage, profilePage];
     currentPage = homePage;
   }
 
@@ -46,12 +46,12 @@ class _MainScreenState extends State<MainScreen> {
             title: Text("Home"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
-            title: Text("Orders"),
+            icon: Icon(Icons.favorite),
+            title: Text("Explore"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            title: Text("Favourites"),
+            icon: Icon(Icons.shopping_cart),
+            title: Text("Orders"),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
@@ -63,3 +63,4 @@ class _MainScreenState extends State<MainScreen> {
     );
   }
 }
+
