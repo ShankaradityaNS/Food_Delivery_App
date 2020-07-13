@@ -1,4 +1,5 @@
 import 'package:Food_Delivery_App/src/Widgets/custom_list_title.dart';
+import 'package:Food_Delivery_App/src/Widgets/small_button.dart';
 import 'package:flutter/material.dart';
 
 bool turnOnNotification = false;
@@ -15,6 +16,9 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
+          decoration: BoxDecoration(
+            color: Colors.white,
+          ),
           padding: EdgeInsets.symmetric(vertical: 40.0, horizontal: 20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -73,23 +77,8 @@ class _ProfilePageState extends State<ProfilePage> {
                       SizedBox(
                         height: 15.0,
                       ),
-                      Container(
-                        height: 25.0,
-                        width: 60.0,
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                              color: Colors.blue,
-                            ),
-                            borderRadius: BorderRadius.circular(20.0)),
-                        child: Center(
-                          child: Text(
-                            "Edit",
-                            style: TextStyle(
-                              color: Colors.blue,
-                              fontSize: 16.0,
-                            ),
-                          ),
-                        ),
+                      SmallButton(
+                        btnText: "Edit",
                       ),
                     ],
                   )
@@ -258,3 +247,4 @@ class _ProfilePageState extends State<ProfilePage> {
     );
   }
 }
+
