@@ -58,6 +58,7 @@ flutter:
     - assests/Images/puri.jpg
     - assests/Images/rava_idly.jpg
     - assests/Images/ProfilePic.jpg
+    - assests/Images/rolls.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -84,3 +85,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
