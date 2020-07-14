@@ -1,3 +1,4 @@
+import 'package:Food_Delivery_App/src/Widgets/button.dart';
 import 'package:Food_Delivery_App/src/pages/signup_page.dart';
 import 'package:flutter/material.dart';
 
@@ -91,22 +92,7 @@ class _SignInPageState extends State<SignInPage> {
             SizedBox(
               height: 20.0,
             ),
-            Container(
-              height: 50.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(25.0),
-                color: Colors.blue,
-              ),
-              child: Center(
-                child: Text(
-                  "Sign In",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 18.0),
-                ),
-              ),
-            ),
+            Button(btnText: "Sign In"),
             SizedBox(
               height: 10.0,
             ),
